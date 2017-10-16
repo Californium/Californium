@@ -53,7 +53,7 @@ void MonitoredDataMapper::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
 }
 
 const QMetaObjectExtraData MonitoredDataMapper::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
+    0,  qt_static_metacall
 };
 
 const QMetaObject MonitoredDataMapper::staticMetaObject = {

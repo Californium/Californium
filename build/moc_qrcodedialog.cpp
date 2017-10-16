@@ -67,7 +67,7 @@ void QRCodeDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
 }
 
 const QMetaObjectExtraData QRCodeDialog::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
+    0,  qt_static_metacall
 };
 
 const QMetaObject QRCodeDialog::staticMetaObject = {

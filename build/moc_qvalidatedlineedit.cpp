@@ -55,7 +55,7 @@ void QValidatedLineEdit::qt_static_metacall(QObject *_o, QMetaObject::Call _c, i
 }
 
 const QMetaObjectExtraData QValidatedLineEdit::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
+    0,  qt_static_metacall
 };
 
 const QMetaObject QValidatedLineEdit::staticMetaObject = {

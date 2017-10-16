@@ -36,7 +36,7 @@ then execute the following:
     qmake
     make
 
-Alternatively, install [Qt Creator](http://qt-project.org/downloads/) and open the `bitcoin-qt.pro` file. 
+Alternatively, install [Qt Creator](http://qt-project.org/downloads/) and open the `bitcoin-qt.pro` file.
 An executable named `bitcoin-qt` will be built.
 
 
@@ -81,9 +81,9 @@ http://miniupnp.tuxfamily.org/files/).  UPnP support is not compiled in by defau
 Set USE_UPNP to a different value to control this:
 
 
-	USE_UPNP=-	no UPnP support, miniupnpc not required;                                 
-	USE_UPNP=0  (the default) built with UPnP, support turned off by default at runtime; 
-	USE_UPNP=1  build with UPnP support turned on by default at runtime.                 
+	USE_UPNP=-	no UPnP support, miniupnpc not required;
+	USE_UPNP=0  (the default) built with UPnP, support turned off by default at runtime;
+	USE_UPNP=1  build with UPnP support turned on by default at runtime.
 
 ### Notification support for recent (k)ubuntu versions
 
@@ -99,8 +99,8 @@ FreeDesktop notification interface through DBUS using the following qmake option
 [libqrencode](http://fukuchi.org/works/qrencode/) may be used to generate QRCode images for payment requests. Pass the USE_QRCODE flag to qmake to control this:
 
 
-	USE_QRCODE=0 	(the default) No QRCode support - libarcode not required                 
-	USE_QRCODE=1 	QRCode support enabled                                                   
+	USE_QRCODE=0 	(the default) No QRCode support - libarcode not required
+	USE_QRCODE=1 	QRCode support enabled
 
 Warnings
 ---------------------

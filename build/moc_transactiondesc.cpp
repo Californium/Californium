@@ -45,7 +45,7 @@ void TransactionDesc::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int 
 }
 
 const QMetaObjectExtraData TransactionDesc::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
+    0,  qt_static_metacall
 };
 
 const QMetaObject TransactionDesc::staticMetaObject = {

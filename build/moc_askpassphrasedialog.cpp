@@ -60,7 +60,7 @@ void AskPassphraseDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
 }
 
 const QMetaObjectExtraData AskPassphraseDialog::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
+    0,  qt_static_metacall
 };
 
 const QMetaObject AskPassphraseDialog::staticMetaObject = {

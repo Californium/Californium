@@ -59,7 +59,7 @@ void AddressTableModel::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
 }
 
 const QMetaObjectExtraData AddressTableModel::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
+    0,  qt_static_metacall
 };
 
 const QMetaObject AddressTableModel::staticMetaObject = {

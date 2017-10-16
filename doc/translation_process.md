@@ -35,12 +35,12 @@ source for all other translations. Whenever a string in the code is changed
 this file must be updated to reflect those changes. This can be accomplished
 by running `lupdate` (included in the Qt SDK). Also, a custom script is used
 to extract strings from the non-Qt parts. This script makes use of `gettext`,
-so make sure that utility is installed (ie, `apt-get install gettext` on 
+so make sure that utility is installed (ie, `apt-get install gettext` on
 Ubuntu/Debian):
 
     python share/qt/extract_strings_qt.py
     lupdate bitcoin-qt.pro -no-obsolete -locations relative -ts src/qt/locale/bitcoin_en.ts
-    
+
 ##### Handling of plurals in the source file
 
 When new plurals are added to the source file, it's important to do the following steps:
@@ -84,7 +84,7 @@ config to be able to connect with the client:
     file_filter = src/qt/locale/bitcoin_<lang>.ts
     source_file = src/qt/locale/bitcoin_en.ts
     source_lang = en
-    
+
 ### .tx/config (for Windows)
 
     [main]

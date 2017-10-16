@@ -28,7 +28,7 @@ Release Process
 ##perform gitian builds
 
  From a directory containing the bitcoin source, gitian-builder and gitian.sigs
-  
+
 	export SIGNER=(your gitian key, ie bluematt, sipa, etc)
 	export VERSION=(new version, e.g. 0.8.0)
 	pushd ./gitian-builder
@@ -53,7 +53,7 @@ Release Process
 	mv build/out/bitcoin-deps-0.0.5.zip inputs/
 
  Build bitcoind and bitcoin-qt on Linux32, Linux64, and Win32:
-  
+
 	./bin/gbuild --commit bitcoin=v${VERSION} ../bitcoin/contrib/gitian-descriptors/gitian.yml
 	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../bitcoin/contrib/gitian-descriptors/gitian.yml
 	pushd build/out
@@ -162,4 +162,4 @@ From a directory containing bitcoin source, gitian.sigs and gitian zips
 	popd
 
 - Upload gitian zips to SourceForge
-- Celebrate 
+- Celebrate

@@ -45,7 +45,7 @@ void CSVModelWriter::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
 }
 
 const QMetaObjectExtraData CSVModelWriter::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
+    0,  qt_static_metacall
 };
 
 const QMetaObject CSVModelWriter::staticMetaObject = {

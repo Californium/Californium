@@ -89,7 +89,7 @@ void WalletFrame::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
 }
 
 const QMetaObjectExtraData WalletFrame::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
+    0,  qt_static_metacall
 };
 
 const QMetaObject WalletFrame::staticMetaObject = {

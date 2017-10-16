@@ -75,7 +75,7 @@ void SignVerifyMessageDialog::qt_static_metacall(QObject *_o, QMetaObject::Call 
 }
 
 const QMetaObjectExtraData SignVerifyMessageDialog::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
+    0,  qt_static_metacall
 };
 
 const QMetaObject SignVerifyMessageDialog::staticMetaObject = {

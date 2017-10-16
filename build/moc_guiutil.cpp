@@ -45,7 +45,7 @@ void GUIUtil::ToolTipToRichTextFilter::qt_static_metacall(QObject *_o, QMetaObje
 }
 
 const QMetaObjectExtraData GUIUtil::ToolTipToRichTextFilter::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
+    0,  qt_static_metacall
 };
 
 const QMetaObject GUIUtil::ToolTipToRichTextFilter::staticMetaObject = {
@@ -106,7 +106,7 @@ void GUIUtil::HelpMessageBox::qt_static_metacall(QObject *_o, QMetaObject::Call 
 }
 
 const QMetaObjectExtraData GUIUtil::HelpMessageBox::staticMetaObjectExtraData = {
-    0,  qt_static_metacall 
+    0,  qt_static_metacall
 };
 
 const QMetaObject GUIUtil::HelpMessageBox::staticMetaObject = {
