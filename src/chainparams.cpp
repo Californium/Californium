@@ -162,9 +162,9 @@ public:
         printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
         genesis.print();
 
-         hashGenesisBlock = genesis.GetHash();
+        hashGenesisBlock = genesis.GetHash();
 
-		assert(hashGenesisBlock == uint256("0x3fd531ed3c15820b8282227d4f0975331a0a0fd249f64f9e83d81dccc98508ab"));
+        assert(hashGenesisBlock == uint256("0x3fd531ed3c15820b8282227d4f0975331a0a0fd249f64f9e83d81dccc98508ab"));
 
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
 
