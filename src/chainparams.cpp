@@ -65,9 +65,9 @@ public:
         vSeeds.push_back(CDNSSeedData("", ""));
 
 
-        base58Prefixes[PUBKEY_ADDRESS] = 88;
-        base58Prefixes[SCRIPT_ADDRESS] = 30;
-        base58Prefixes[SECRET_KEY] = 224;
+        base58Prefixes[PUBKEY_ADDRESS] = 88;   // c...
+        base58Prefixes[SCRIPT_ADDRESS] = 30;   // D...
+        base58Prefixes[SECRET_KEY] = 224;      // 8...
 
         // Convert the pnSeeds array into usable address objects.
         for (unsigned int i = 0; i < ARRAYLEN(pnSeed); i++)
@@ -127,9 +127,9 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        base58Prefixes[PUBKEY_ADDRESS] = 68;
-        base58Prefixes[SCRIPT_ADDRESS] = 30;
-        base58Prefixes[SECRET_KEY] = 239;
+        base58Prefixes[PUBKEY_ADDRESS] = 68;   // U...
+        base58Prefixes[SCRIPT_ADDRESS] = 30;   // D... (same as main).
+        base58Prefixes[SECRET_KEY] = 239;      // 3...
 
     }
     virtual Network NetworkID() const { return CChainParams::TESTNET; }
