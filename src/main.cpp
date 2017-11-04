@@ -1320,7 +1320,7 @@ unsigned int static GetNextWorkRequired_V1(const CBlockIndex* pindexLast, const 
         if (TestNet())
         {
             // Special difficulty rule for testnet:
-            // If the new block's timestamp is more than 2* 10 minutes
+            // If the new block's timestamp is more than 2* 90 seconds
             // then allow mining of a min-difficulty block.
             if (pblock->nTime > pindexLast->nTime + nTargetSpacing*2)
                 return nProofOfWorkLimit;
