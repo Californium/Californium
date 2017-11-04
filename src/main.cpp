@@ -4366,7 +4366,11 @@ public:
 CBlockTemplate* CreateNewBlock(CReserveKey& reservekey)
 {
     // Create new block
+#if __cplusplus >= 201103L
+    unique_ptr<CBlockTemplate> pblocktemplate(new CBlockTemplate());
+#else
     auto_ptr<CBlockTemplate> pblocktemplate(new CBlockTemplate());
+#endif
     if(!pblocktemplate.get())
         return NULL;
     CBlock *pblock = &pblocktemplate->block; // pointer for convenience
@@ -4732,7 +4736,11 @@ void static BitcoinMiner(CWallet *pwallet)
         unsigned int nTransactionsUpdatedLast = nTransactionsUpdated;
         CBlockIndex* pindexPrev = pindexBest;
 
+#if __cplusplus >= 201103L
+        unique_ptr<CBlockTemplate> pblocktemplate(CreateNewBlock(reservekey));
+#else
         auto_ptr<CBlockTemplate> pblocktemplate(CreateNewBlock(reservekey));
+#endif
         if (!pblocktemplate.get())
             return;
         CBlock *pblock = &pblocktemplate->block;
