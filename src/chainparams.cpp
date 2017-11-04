@@ -32,7 +32,7 @@ public:
         nRPCPort = 44254;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 20);
         //nSubsidyHalvingInterval = 100000;
-  
+
         const char* pszTimestamp = "Californium is a radioactive metallic chemical element with symbol Cf and atomic number 98";
         CTransaction txNew;
         txNew.vin.resize(1);
@@ -47,7 +47,7 @@ public:
         genesis.nTime    = 1415510670;
         genesis.nBits    = 0x1e0fffff;
         genesis.nNonce   = 655496;
-        
+
         hashGenesisBlock = genesis.GetHash();
 
         printf("%s\n", hashGenesisBlock.ToString().c_str());
@@ -57,24 +57,24 @@ public:
 
         hashGenesisBlock = genesis.GetHash();
 
-                 
+
         assert(hashGenesisBlock == uint256("0x00000a99a373e0fd8209e0d19696855a3523cbc6bdd242745b0cf0640ed15eaf"));
         assert(genesis.hashMerkleRoot == uint256("0x7f4b22187b737a1f46ef9481eb55f97c3b5be9744484d41a9730c5b481e7f1a8"));
 
         vSeeds.push_back(CDNSSeedData("californiumcoin.cf", "54.149.30.199"));
         vSeeds.push_back(CDNSSeedData("", ""));
- 
 
-        base58Prefixes[PUBKEY_ADDRESS] = 88;
-        base58Prefixes[SCRIPT_ADDRESS] = 30;
-        base58Prefixes[SECRET_KEY] = 224;
+
+        base58Prefixes[PUBKEY_ADDRESS] = 88;   // c...
+        base58Prefixes[SCRIPT_ADDRESS] = 30;   // D...
+        base58Prefixes[SECRET_KEY] = 224;      // 8...
 
         // Convert the pnSeeds array into usable address objects.
         for (unsigned int i = 0; i < ARRAYLEN(pnSeed); i++)
         {
             // It'll only connect to one or two seed nodes because once it connects,
             // it'll get a pile of addresses with newer timestamps.
-            // Seed nodes are given a random 'last seen time' 
+            // Seed nodes are given a random 'last seen time'
             const int64 nTwoDays = 2 * 24 * 60 * 60;
             struct in_addr ip;
             memcpy(&ip, &pnSeed[i], sizeof(ip));
@@ -115,7 +115,7 @@ public:
 
         genesis.nTime    = 1415510670;
         genesis.nNonce   = 655496;
-        
+
         //hashGenesisBlock = genesis.GetHash();
 
         printf("%s\n", hashGenesisBlock.ToString().c_str());
@@ -127,9 +127,9 @@ public:
         vFixedSeeds.clear();
         vSeeds.clear();
 
-        base58Prefixes[PUBKEY_ADDRESS] = 68;
-        base58Prefixes[SCRIPT_ADDRESS] = 30;
-        base58Prefixes[SECRET_KEY] = 239;
+        base58Prefixes[PUBKEY_ADDRESS] = 68;   // U...
+        base58Prefixes[SCRIPT_ADDRESS] = 30;   // D... (same as main).
+        base58Prefixes[SECRET_KEY] = 239;      // 3...
 
     }
     virtual Network NetworkID() const { return CChainParams::TESTNET; }
@@ -155,17 +155,17 @@ public:
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 45539;
         strDataDir = "regtest";
-        
+
         hashGenesisBlock = genesis.GetHash();
-        
+
         printf("%s\n", hashGenesisBlock.ToString().c_str());
         printf("%s\n", genesis.hashMerkleRoot.ToString().c_str());
         genesis.print();
 
-         hashGenesisBlock = genesis.GetHash();
+        hashGenesisBlock = genesis.GetHash();
 
-		assert(hashGenesisBlock == uint256("0x3fd531ed3c15820b8282227d4f0975331a0a0fd249f64f9e83d81dccc98508ab"));
-        
+        assert(hashGenesisBlock == uint256("0x3fd531ed3c15820b8282227d4f0975331a0a0fd249f64f9e83d81dccc98508ab"));
+
         vSeeds.clear();  // Regtest mode doesn't have any DNS seeds.
 
         base58Prefixes[PUBKEY_ADDRESS] = 0;
