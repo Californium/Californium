@@ -190,11 +190,11 @@ Value makekeypair(const Array& params, bool fHelp)
              "makekeypair [prefix]\n"
              "Make a public/private key pair.\n"
              "[prefix] is optional preferred prefix for the public key.\n");
-  
+
      string strPrefix = "";
      if (params.size() > 0)
          strPrefix = params[0].get_str();
- 
+
      CKey key;
      CPubKey pubkey;
      string pubkeyhex;
@@ -206,10 +206,10 @@ Value makekeypair(const Array& params, bool fHelp)
          pubkey = key.GetPubKey();
          pubkeyhex = HexStr(pubkey.begin(), pubkey.end());
      } while (nCount < 10000 && strPrefix != pubkeyhex.substr(0, strPrefix.size()));
- 
+
      if (strPrefix != pubkeyhex.substr(0, strPrefix.size()))
          return Value::null;
- 
+
      Object result;
      result.push_back(Pair("PublicKey", pubkeyhex));
      result.push_back(Pair("PrivateKey", CBitcoinSecret(key).ToString()));
@@ -381,7 +381,7 @@ static string HTTPReply(int nStatus, const string& strMsg, bool keepalive)
             "HTTP/1.1 %d %s\r\n"
             "Date: %s\r\n"
             "Connection: %s\r\n"
-            "Content-Length: %"PRIszu"\r\n"
+            "Content-Length: %" PRIszu "\r\n"
             "Content-Type: application/json\r\n"
             "Server: Californium-json-rpc/%s\r\n"
             "\r\n"
