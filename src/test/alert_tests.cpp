@@ -10,6 +10,11 @@
 #include "serialize.h"
 #include "util.h"
 
+// The data for this test is the same as the data in Unobtanium and bitcoin 0.8.2,
+// but the Alert public key has changed, and cfdev is no longer around with the
+// Alert private key, so disable these tests for now.
+#define DISABLE 1
+
 #if 0
 //
 // alertTests contains 7 alerts, generated with this code:
@@ -119,6 +124,7 @@ BOOST_FIXTURE_TEST_SUITE(Alert_tests, ReadAlerts)
 
 BOOST_AUTO_TEST_CASE(AlertApplies)
 {
+#ifndef DISABLE
     SetMockTime(11);
 
     BOOST_FOREACH(const CAlert& alert, alerts)
@@ -151,6 +157,7 @@ BOOST_AUTO_TEST_CASE(AlertApplies)
     BOOST_CHECK(!alerts[2].AppliesTo(1, "/Satoshi:0.3.0/"));
 
     SetMockTime(0);
+#endif
 }
 
 
@@ -159,6 +166,7 @@ BOOST_AUTO_TEST_CASE(AlertApplies)
 #ifndef WIN32
 BOOST_AUTO_TEST_CASE(AlertNotify)
 {
+#ifndef DISABLE
     SetMockTime(11);
 
     boost::filesystem::path temp = GetTempPath() / "alertnotify.txt";
@@ -179,6 +187,7 @@ BOOST_AUTO_TEST_CASE(AlertNotify)
     boost::filesystem::remove(temp);
 
     SetMockTime(0);
+#endif
 }
 #endif
 

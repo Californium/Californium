@@ -79,7 +79,7 @@ if (nHeight > )
     case uBTC: return 100;
     case nBTC: return 1;
     default:   return 100000000;
-    
+
     }
 }
 */
